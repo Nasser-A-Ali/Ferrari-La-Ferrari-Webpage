@@ -1,0 +1,310 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 150%;
+}
+  
+body {
+    background-image: url("../img/ferrari_background.jpg");
+    background-color: white;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+  
+.mainbox {
+    margin: auto;
+    width: 80%;
+    border: 3px solid darkred;
+    padding: 10px;
+    height: 100%; /* will be removed once page is complete */
+    background-color: white;
+    opacity: 95%;
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: stretch;
+}
+
+header {
+    width: 80%;
+    margin: 100px auto auto auto;
+    color: white;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+
+nav {
+    width: 100%;
+    background-color: darkred;
+    opacity: 90%;
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    padding: 20px;
+    
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: white;
+    font-weight: 700;
+}
+
+/* .headerimg {    
+    width: 100%;
+    max-height: auto;
+} */
+
+/* #bannerimage {
+    max-width: 100%;
+    height: auto;
+    opacity: 100%;
+    padding: 0;
+    margin: 0;
+    background-image: url(/img/header_img.jpg);
+    height: 300px;
+    display: block;
+    background-color: purple;
+    background-position: center;
+} */
+
+#header-container {
+    width: 100%;
+    max-height: 300px; 
+    overflow: hidden; 
+    position: relative; 
+}
+
+#header-container img {
+    /* "Ferrari La Ferrari driving on a road by Auto Express"; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    opacity: 100%;
+}
+
+#left-box {
+    height: auto;
+    width: 24%;
+    padding: 20px;
+    margin: 5px;
+    display:inline-block;
+    background-color: #656565;
+    border: 1px solid darkred;
+    color: rgb(229, 229, 229);
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+}
+
+#center-box {
+    height: auto;
+    width:50%;
+    padding: 20px;
+    margin: 5px;
+    display:inline-block;
+    background-color: #D9D9D9;
+    border: 1px solid darkred;
+    border-radius: 10px;
+    text-align: center;
+    flex: 2;
+}
+
+#stacked-boxes {
+    height: auto;
+    width:25%;
+    display:inline-block;
+    text-align: center;
+    flex: 1;
+}
+
+#right-box-top {
+    height: 48%;
+    width:100%;
+    padding: 30px;
+    margin: 5px;
+    display: inline-block;
+    background-color: #F54E4E;
+    border: 1px solid darkred;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+}
+
+#right-box-top h3 {
+    text-align: center;
+}
+
+#right-box-top li {
+    list-style-type: none;
+    text-align:justify;
+}
+
+#right-box-bottom {
+    height: 48%;
+    width:100%;
+    padding: 20px;
+    margin: 5px;
+    display: inline-block;
+    background-color: #F54E4E;
+    border: 1px solid darkred;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+}
+
+input {
+    background-color: darkred;
+    color: white;
+    padding: 10px 15px;
+    margin: 15px 5px;
+    border: 1px solid darkred;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+input:hover {
+    background-color: rgb(162, 0, 0);
+}
+
+input:active {
+    box-shadow:
+    inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+#img-box-left {
+    background-image: url(../img/ferrari_side_profile_left.jpg);
+    /* "Ferrari La Ferrari side profile by Nate Dieckhaus"; */
+    background-size:cover;
+    background-position: center;
+    background-attachment:local;
+
+    height: auto;
+    width: 20%;
+    padding: 20px;
+    margin: 5px;
+    display:inline-block;
+    background-color: #656565;
+    border: 1px solid darkred;
+    color: rgb(229, 229, 229);
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+}
+
+#img-box-right {
+    background-image: url(../img/ferrari_side_profile_right.jpg);
+    /* "Ferrari La Ferrari side profile by Nate Dieckhaus"; */
+    background-size:cover;
+    background-position: center;
+    background-attachment:local;
+
+    height: auto;
+    width: 20%;
+    padding: 20px;
+    margin: 5px;
+    display:inline-block;
+    background-color: #656565;
+    border: 1px solid darkred;
+    color: rgb(229, 229, 229);
+    border-radius: 10px;
+    flex: 1;
+}
+
+#dealership-stacked-boxes {
+    height: auto;
+    width:25%;
+    display:inline-block;
+    text-align: center;
+    flex: 2;
+}
+
+.dealership-box {
+    height: 21%;
+    width:90%;
+    margin: 10px 5%;
+    padding: 20px;
+    display: inline-block;
+    background-color: #F54E4E;
+    border: 1px solid darkred;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.1em;
+    flex: 2;
+}
+
+
+#features-box {
+    height: auto;
+    width: 25%;
+    padding: 30px;
+    margin: 5px;
+    display:inline-block;
+    background-color: #F54E4E;
+    border: 1px solid darkred;
+    border-radius: 10px;
+    text-align: left;
+}
+
+#features-box li {
+    list-style-type:square;
+    text-align:left;
+    margin-left: 30px;
+    padding-right: 30px;
+    margin-top: 15px;
+}
+
+#embedded-video-box {
+    height: auto;
+    width:50%;
+    padding: 20px;
+    margin: 5px;
+    display:inline-block;
+    background-color: #D9D9D9;
+    border: 1px solid darkred;
+    border-radius: 10px;
+    text-align: center;
+    flex: 2;
+}
+
+audio {
+    width: 100%;
+}
+audio::-webkit-media-controls-play-button,
+     audio::-webkit-media-controls-panel {
+     background-color: #D9D9D9;
+     }
+
+footer {
+    margin: auto;
+    width: 80%;
+    border: 3px solid darkred;
+    border-top: 0px;
+    padding: 10px;
+    height: 100%; /* will be removed once page is complete */
+    background-color: white;
+    opacity: 95%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: stretch;
+    font-size: 0.8em;
+}
